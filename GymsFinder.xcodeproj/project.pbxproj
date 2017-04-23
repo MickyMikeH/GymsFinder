@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A205496A4DFD22B114CC99CA /* libPods-GymsFinderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12031BE62116B50FD6103893 /* libPods-GymsFinderTests.a */; };
+		BF31B069C9135594F068857C /* libPods-GymsFinderUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C06A7D8792061F4F74850EE /* libPods-GymsFinderUITests.a */; };
+		DC0E28ED10F5EFF34C250F53 /* libPods-GymsFinder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9345E8888DE1A1900562A09A /* libPods-GymsFinder.a */; };
+		F408E4521EAB46C50055EB34 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F408E4511EAB46C50055EB34 /* FileManager.m */; };
+		F408E4541EAB47700055EB34 /* GymStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F408E4531EAB47700055EB34 /* GymStore.m */; };
+		F43F571F1EA1D15200DF2B27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F43F571E1EA1D15200DF2B27 /* main.m */; };
+		F43F57221EA1D15200DF2B27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F43F57211EA1D15200DF2B27 /* AppDelegate.m */; };
+		F43F57251EA1D15200DF2B27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43F57241EA1D15200DF2B27 /* ViewController.m */; };
+		F43F57281EA1D15200DF2B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43F57261EA1D15200DF2B27 /* Main.storyboard */; };
+		F43F572A1EA1D15200DF2B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43F57291EA1D15200DF2B27 /* Assets.xcassets */; };
+		F43F572D1EA1D15200DF2B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43F572B1EA1D15200DF2B27 /* LaunchScreen.storyboard */; };
+		F43F57381EA1D15200DF2B27 /* GymsFinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F43F57371EA1D15200DF2B27 /* GymsFinderTests.m */; };
+		F43F57431EA1D15200DF2B27 /* GymsFinderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F43F57421EA1D15200DF2B27 /* GymsFinderUITests.m */; };
+		F495F51B1EAB9EDE0047C2CA /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F495F51A1EAB9EDE0047C2CA /* DownloadViewController.m */; };
+		F495F51E1EAB9F340047C2CA /* CityApi.m in Sources */ = {isa = PBXBuildFile; fileRef = F495F51D1EAB9F340047C2CA /* CityApi.m */; };
+		F495F5211EAB9F600047C2CA /* BaseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = F495F5201EAB9F600047C2CA /* BaseApi.m */; };
+		F4DD237F1EA1E36400FE8F21 /* GymsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DD237E1EA1E36400FE8F21 /* GymsApi.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F43F57341EA1D15200DF2B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F43F57121EA1D15200DF2B27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F43F57191EA1D15200DF2B27;
+			remoteInfo = GymsFinder;
+		};
+		F43F573F1EA1D15200DF2B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F43F57121EA1D15200DF2B27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F43F57191EA1D15200DF2B27;
+			remoteInfo = GymsFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C06A7D8792061F4F74850EE /* libPods-GymsFinderUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GymsFinderUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12031BE62116B50FD6103893 /* libPods-GymsFinderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GymsFinderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D40E7ED701D93A245122E41 /* Pods-GymsFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymsFinderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymsFinderTests/Pods-GymsFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DE7F605F0CE7A1496E3BCE7 /* Pods-GymsFinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymsFinderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymsFinderUITests/Pods-GymsFinderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5D89F00C83DD2E5144422A48 /* Pods-GymsFinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymsFinderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymsFinderUITests/Pods-GymsFinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9345E8888DE1A1900562A09A /* libPods-GymsFinder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GymsFinder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94015EFF5EF5960D4B305DD0 /* Pods-GymsFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymsFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymsFinder/Pods-GymsFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		9BB36A210117E8C3D2B8EB16 /* Pods-GymsFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymsFinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymsFinderTests/Pods-GymsFinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		F408E4501EAB46C50055EB34 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		F408E4511EAB46C50055EB34 /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+		F408E4531EAB47700055EB34 /* GymStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GymStore.m; path = GymsFinder/GymStore.m; sourceTree = "<group>"; };
+		F43F571A1EA1D15200DF2B27 /* GymsFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymsFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43F571E1EA1D15200DF2B27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F43F57201EA1D15200DF2B27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F43F57211EA1D15200DF2B27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F43F57231EA1D15200DF2B27 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = GymsFinder/ViewController.h; sourceTree = "<group>"; };
+		F43F57241EA1D15200DF2B27 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = GymsFinder/ViewController.m; sourceTree = "<group>"; };
+		F43F57271EA1D15200DF2B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F43F57291EA1D15200DF2B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F43F572C1EA1D15200DF2B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F43F572E1EA1D15200DF2B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F43F57331EA1D15200DF2B27 /* GymsFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymsFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43F57371EA1D15200DF2B27 /* GymsFinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GymsFinderTests.m; sourceTree = "<group>"; };
+		F43F57391EA1D15200DF2B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F43F573E1EA1D15200DF2B27 /* GymsFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymsFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43F57421EA1D15200DF2B27 /* GymsFinderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GymsFinderUITests.m; sourceTree = "<group>"; };
+		F43F57441EA1D15200DF2B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F495F5191EAB9EDE0047C2CA /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadViewController.h; path = GymsFinder/DownloadViewController.h; sourceTree = "<group>"; };
+		F495F51A1EAB9EDE0047C2CA /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownloadViewController.m; path = GymsFinder/DownloadViewController.m; sourceTree = "<group>"; };
+		F495F51C1EAB9F340047C2CA /* CityApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityApi.h; sourceTree = "<group>"; };
+		F495F51D1EAB9F340047C2CA /* CityApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityApi.m; sourceTree = "<group>"; };
+		F495F51F1EAB9F600047C2CA /* BaseApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseApi.h; sourceTree = "<group>"; };
+		F495F5201EAB9F600047C2CA /* BaseApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseApi.m; sourceTree = "<group>"; };
+		F4DD237D1EA1E36400FE8F21 /* GymsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GymsApi.h; path = GymsFinder/GymsApi.h; sourceTree = "<group>"; };
+		F4DD237E1EA1E36400FE8F21 /* GymsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GymsApi.m; path = GymsFinder/GymsApi.m; sourceTree = "<group>"; };
+		F4DD23801EA4FFB600FE8F21 /* GymStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GymStore.h; path = GymsFinder/GymStore.h; sourceTree = "<group>"; };
+		F57D50D9E34AE72C57161FA3 /* Pods-GymsFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymsFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymsFinder/Pods-GymsFinder.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F43F57171EA1D15200DF2B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0E28ED10F5EFF34C250F53 /* libPods-GymsFinder.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F43F57301EA1D15200DF2B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A205496A4DFD22B114CC99CA /* libPods-GymsFinderTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F43F573B1EA1D15200DF2B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF31B069C9135594F068857C /* libPods-GymsFinderUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BC14A3514A2676377A6E2CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9345E8888DE1A1900562A09A /* libPods-GymsFinder.a */,
+				12031BE62116B50FD6103893 /* libPods-GymsFinderTests.a */,
+				0C06A7D8792061F4F74850EE /* libPods-GymsFinderUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51AEFD042997B174116C5BDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94015EFF5EF5960D4B305DD0 /* Pods-GymsFinder.debug.xcconfig */,
+				F57D50D9E34AE72C57161FA3 /* Pods-GymsFinder.release.xcconfig */,
+				2D40E7ED701D93A245122E41 /* Pods-GymsFinderTests.debug.xcconfig */,
+				9BB36A210117E8C3D2B8EB16 /* Pods-GymsFinderTests.release.xcconfig */,
+				5D89F00C83DD2E5144422A48 /* Pods-GymsFinderUITests.debug.xcconfig */,
+				4DE7F605F0CE7A1496E3BCE7 /* Pods-GymsFinderUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F408E44F1EAB45F80055EB34 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				F4DD237D1EA1E36400FE8F21 /* GymsApi.h */,
+				F4DD237E1EA1E36400FE8F21 /* GymsApi.m */,
+				F495F51C1EAB9F340047C2CA /* CityApi.h */,
+				F495F51D1EAB9F340047C2CA /* CityApi.m */,
+				F495F51F1EAB9F600047C2CA /* BaseApi.h */,
+				F495F5201EAB9F600047C2CA /* BaseApi.m */,
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
+		F43F57111EA1D15200DF2B27 = {
+			isa = PBXGroup;
+			children = (
+				F495F5221EAC48D30047C2CA /* ViewController */,
+				F495F5181EAB9B050047C2CA /* Model */,
+				F495F5171EAB9AF50047C2CA /* Utiltiy */,
+				F408E44F1EAB45F80055EB34 /* Api */,
+				F43F571C1EA1D15200DF2B27 /* GymsFinder */,
+				F43F57361EA1D15200DF2B27 /* GymsFinderTests */,
+				F43F57411EA1D15200DF2B27 /* GymsFinderUITests */,
+				F43F571B1EA1D15200DF2B27 /* Products */,
+				51AEFD042997B174116C5BDC /* Pods */,
+				4BC14A3514A2676377A6E2CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F43F571B1EA1D15200DF2B27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F43F571A1EA1D15200DF2B27 /* GymsFinder.app */,
+				F43F57331EA1D15200DF2B27 /* GymsFinderTests.xctest */,
+				F43F573E1EA1D15200DF2B27 /* GymsFinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F43F571C1EA1D15200DF2B27 /* GymsFinder */ = {
+			isa = PBXGroup;
+			children = (
+				F43F57201EA1D15200DF2B27 /* AppDelegate.h */,
+				F43F57211EA1D15200DF2B27 /* AppDelegate.m */,
+				F43F57261EA1D15200DF2B27 /* Main.storyboard */,
+				F43F57291EA1D15200DF2B27 /* Assets.xcassets */,
+				F43F572B1EA1D15200DF2B27 /* LaunchScreen.storyboard */,
+				F43F572E1EA1D15200DF2B27 /* Info.plist */,
+				F43F571D1EA1D15200DF2B27 /* Supporting Files */,
+			);
+			path = GymsFinder;
+			sourceTree = "<group>";
+		};
+		F43F571D1EA1D15200DF2B27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F43F571E1EA1D15200DF2B27 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F43F57361EA1D15200DF2B27 /* GymsFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F43F57371EA1D15200DF2B27 /* GymsFinderTests.m */,
+				F43F57391EA1D15200DF2B27 /* Info.plist */,
+			);
+			path = GymsFinderTests;
+			sourceTree = "<group>";
+		};
+		F43F57411EA1D15200DF2B27 /* GymsFinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F43F57421EA1D15200DF2B27 /* GymsFinderUITests.m */,
+				F43F57441EA1D15200DF2B27 /* Info.plist */,
+			);
+			path = GymsFinderUITests;
+			sourceTree = "<group>";
+		};
+		F495F5171EAB9AF50047C2CA /* Utiltiy */ = {
+			isa = PBXGroup;
+			children = (
+				F408E4501EAB46C50055EB34 /* FileManager.h */,
+				F408E4511EAB46C50055EB34 /* FileManager.m */,
+			);
+			name = Utiltiy;
+			sourceTree = "<group>";
+		};
+		F495F5181EAB9B050047C2CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4DD23801EA4FFB600FE8F21 /* GymStore.h */,
+				F408E4531EAB47700055EB34 /* GymStore.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F495F5221EAC48D30047C2CA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F43F57231EA1D15200DF2B27 /* ViewController.h */,
+				F43F57241EA1D15200DF2B27 /* ViewController.m */,
+				F495F5191EAB9EDE0047C2CA /* DownloadViewController.h */,
+				F495F51A1EAB9EDE0047C2CA /* DownloadViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F43F57191EA1D15200DF2B27 /* GymsFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F43F57471EA1D15200DF2B27 /* Build configuration list for PBXNativeTarget "GymsFinder" */;
+			buildPhases = (
+				F834225F787EFEF1B9F2230C /* [CP] Check Pods Manifest.lock */,
+				F43F57161EA1D15200DF2B27 /* Sources */,
+				F43F57171EA1D15200DF2B27 /* Frameworks */,
+				F43F57181EA1D15200DF2B27 /* Resources */,
+				53875E421D39999E7818D366 /* [CP] Embed Pods Frameworks */,
+				9C04B9D7A8382985C6BB32A9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GymsFinder;
+			productName = GymsFinder;
+			productReference = F43F571A1EA1D15200DF2B27 /* GymsFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F43F57321EA1D15200DF2B27 /* GymsFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F43F574A1EA1D15200DF2B27 /* Build configuration list for PBXNativeTarget "GymsFinderTests" */;
+			buildPhases = (
+				94F5880187487B91AB2677D7 /* [CP] Check Pods Manifest.lock */,
+				F43F572F1EA1D15200DF2B27 /* Sources */,
+				F43F57301EA1D15200DF2B27 /* Frameworks */,
+				F43F57311EA1D15200DF2B27 /* Resources */,
+				39499AE6AFB535E3F4F5BB8C /* [CP] Embed Pods Frameworks */,
+				8DDB303E23F19B365D101A7E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F43F57351EA1D15200DF2B27 /* PBXTargetDependency */,
+			);
+			name = GymsFinderTests;
+			productName = GymsFinderTests;
+			productReference = F43F57331EA1D15200DF2B27 /* GymsFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F43F573D1EA1D15200DF2B27 /* GymsFinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F43F574D1EA1D15200DF2B27 /* Build configuration list for PBXNativeTarget "GymsFinderUITests" */;
+			buildPhases = (
+				FE7328017CEC127CAF4C3FF8 /* [CP] Check Pods Manifest.lock */,
+				F43F573A1EA1D15200DF2B27 /* Sources */,
+				F43F573B1EA1D15200DF2B27 /* Frameworks */,
+				F43F573C1EA1D15200DF2B27 /* Resources */,
+				45567F07E94B5380F854A249 /* [CP] Embed Pods Frameworks */,
+				EA39B04EC1C3FD67182AB379 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F43F57401EA1D15200DF2B27 /* PBXTargetDependency */,
+			);
+			name = GymsFinderUITests;
+			productName = GymsFinderUITests;
+			productReference = F43F573E1EA1D15200DF2B27 /* GymsFinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F43F57121EA1D15200DF2B27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Michael Hsieh";
+				TargetAttributes = {
+					F43F57191EA1D15200DF2B27 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					F43F57321EA1D15200DF2B27 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F43F57191EA1D15200DF2B27;
+					};
+					F43F573D1EA1D15200DF2B27 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F43F57191EA1D15200DF2B27;
+					};
+				};
+			};
+			buildConfigurationList = F43F57151EA1D15200DF2B27 /* Build configuration list for PBXProject "GymsFinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F43F57111EA1D15200DF2B27;
+			productRefGroup = F43F571B1EA1D15200DF2B27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F43F57191EA1D15200DF2B27 /* GymsFinder */,
+				F43F57321EA1D15200DF2B27 /* GymsFinderTests */,
+				F43F573D1EA1D15200DF2B27 /* GymsFinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F43F57181EA1D15200DF2B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43F572D1EA1D15200DF2B27 /* LaunchScreen.storyboard in Resources */,
+				F43F572A1EA1D15200DF2B27 /* Assets.xcassets in Resources */,
+				F43F57281EA1D15200DF2B27 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F43F57311EA1D15200DF2B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F43F573C1EA1D15200DF2B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39499AE6AFB535E3F4F5BB8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymsFinderTests/Pods-GymsFinderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45567F07E94B5380F854A249 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymsFinderUITests/Pods-GymsFinderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53875E421D39999E7818D366 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymsFinder/Pods-GymsFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DDB303E23F19B365D101A7E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymsFinderTests/Pods-GymsFinderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94F5880187487B91AB2677D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C04B9D7A8382985C6BB32A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymsFinder/Pods-GymsFinder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA39B04EC1C3FD67182AB379 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymsFinderUITests/Pods-GymsFinderUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F834225F787EFEF1B9F2230C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE7328017CEC127CAF4C3FF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F43F57161EA1D15200DF2B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43F57251EA1D15200DF2B27 /* ViewController.m in Sources */,
+				F495F51B1EAB9EDE0047C2CA /* DownloadViewController.m in Sources */,
+				F43F57221EA1D15200DF2B27 /* AppDelegate.m in Sources */,
+				F408E4541EAB47700055EB34 /* GymStore.m in Sources */,
+				F43F571F1EA1D15200DF2B27 /* main.m in Sources */,
+				F408E4521EAB46C50055EB34 /* FileManager.m in Sources */,
+				F4DD237F1EA1E36400FE8F21 /* GymsApi.m in Sources */,
+				F495F5211EAB9F600047C2CA /* BaseApi.m in Sources */,
+				F495F51E1EAB9F340047C2CA /* CityApi.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F43F572F1EA1D15200DF2B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43F57381EA1D15200DF2B27 /* GymsFinderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F43F573A1EA1D15200DF2B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43F57431EA1D15200DF2B27 /* GymsFinderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F43F57351EA1D15200DF2B27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F43F57191EA1D15200DF2B27 /* GymsFinder */;
+			targetProxy = F43F57341EA1D15200DF2B27 /* PBXContainerItemProxy */;
+		};
+		F43F57401EA1D15200DF2B27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F43F57191EA1D15200DF2B27 /* GymsFinder */;
+			targetProxy = F43F573F1EA1D15200DF2B27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F43F57261EA1D15200DF2B27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F43F57271EA1D15200DF2B27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F43F572B1EA1D15200DF2B27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F43F572C1EA1D15200DF2B27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F43F57451EA1D15200DF2B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F43F57461EA1D15200DF2B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F43F57481EA1D15200DF2B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94015EFF5EF5960D4B305DD0 /* Pods-GymsFinder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GymsFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.GymsFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F43F57491EA1D15200DF2B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F57D50D9E34AE72C57161FA3 /* Pods-GymsFinder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GymsFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.GymsFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F43F574B1EA1D15200DF2B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D40E7ED701D93A245122E41 /* Pods-GymsFinderTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GymsFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.GymsFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymsFinder.app/GymsFinder";
+			};
+			name = Debug;
+		};
+		F43F574C1EA1D15200DF2B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BB36A210117E8C3D2B8EB16 /* Pods-GymsFinderTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GymsFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.GymsFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymsFinder.app/GymsFinder";
+			};
+			name = Release;
+		};
+		F43F574E1EA1D15200DF2B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D89F00C83DD2E5144422A48 /* Pods-GymsFinderUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = GymsFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.GymsFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GymsFinder;
+			};
+			name = Debug;
+		};
+		F43F574F1EA1D15200DF2B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DE7F605F0CE7A1496E3BCE7 /* Pods-GymsFinderUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = GymsFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.GymsFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GymsFinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F43F57151EA1D15200DF2B27 /* Build configuration list for PBXProject "GymsFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F43F57451EA1D15200DF2B27 /* Debug */,
+				F43F57461EA1D15200DF2B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F43F57471EA1D15200DF2B27 /* Build configuration list for PBXNativeTarget "GymsFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F43F57481EA1D15200DF2B27 /* Debug */,
+				F43F57491EA1D15200DF2B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F43F574A1EA1D15200DF2B27 /* Build configuration list for PBXNativeTarget "GymsFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F43F574B1EA1D15200DF2B27 /* Debug */,
+				F43F574C1EA1D15200DF2B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F43F574D1EA1D15200DF2B27 /* Build configuration list for PBXNativeTarget "GymsFinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F43F574E1EA1D15200DF2B27 /* Debug */,
+				F43F574F1EA1D15200DF2B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F43F57121EA1D15200DF2B27 /* Project object */;
+}
