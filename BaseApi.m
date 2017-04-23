@@ -14,13 +14,21 @@ NSTimeInterval const TIME_OUT = 3.0f;
 
 @implementation BaseApi
 
-+ (void)downloadFileWithFileName:(NSString *)fileName URLstring:(NSString *)URLstring completionHandler:(CompletionHandler)completionHandler {
++ (void)downloadFileWithFileName:(NSString *)fileName URLstring:(NSString *)URLstring isPost:(BOOL)isPost completionHandler:(CompletionHandler)completionHandler {
+    
     if (![FileManager checkFileIsExist:[NSString stringWithFormat:@"%@.json", fileName]]) {
         NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
         AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
-        NSURL *url = [[NSURL alloc] initWithString:URLstring];
-        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:TIME_OUT];
         
+        NSURLRequest *request = nil;
+        if (isPost) {
+            request = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"POST" URLString:URLstring parameters:fileName error:nil];
+        }
+        else {
+            NSURL *url = [[NSURL alloc] initWithString:URLstring];
+            request = [[NSURLRequest alloc] initWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:TIME_OUT];
+        }
+
         NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
             
         } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
@@ -31,12 +39,16 @@ NSTimeInterval const TIME_OUT = 3.0f;
             
         } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
             NSLog(@"File downloaded to: %@", filePath);
+            
             completionHandler (error);
         }];
         
         [downloadTask resume];
     }
-    completionHandler (nil);
+    else {
+    
+        completionHandler (nil);
+    }
 }
 
 @end

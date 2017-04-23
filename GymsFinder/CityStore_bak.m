@@ -6,27 +6,27 @@
 //  Copyright © 2017年 Michael Hsieh. All rights reserved.
 //
 
-#import "GymStore.h"
+#import "CityStore_bak.h"
 #import "FileManager.h"
 
-@implementation GymStore
+@implementation CityStore_bak
 
 + (instancetype)sharedInstance {
-    static GymStore *instance = nil;
+    static CityStore_bak *instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [[GymStore alloc] init];
+        instance = [[CityStore_bak alloc] init];
         [instance parseJSONArray:[FileManager parseJSONArrayWithFileName:@"CityList.json"]];
     });
     return instance;
 }
 
 - (void)parseJSONArray:(NSArray *)array {
-    self.items = [NSArray arrayWithArray:[MTLJSONAdapter modelsOfClass:[CityItems class] fromJSONArray:array error:nil]];
+    self.items = [NSArray arrayWithArray:[MTLJSONAdapter modelsOfClass:[CityItems_bak class] fromJSONArray:array error:nil]];
 }
 
 @end
-@implementation CityItems
+@implementation CityItems_bak
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
              @"cityID" : @"id",
@@ -37,13 +37,13 @@
 
 + (NSValueTransformer *)countrysJSONTransformer {
     
-    return [MTLJSONAdapter arrayTransformerWithModelClass:[CountryItems class]];
+    return [MTLJSONAdapter arrayTransformerWithModelClass:[CountryItems_bak class]];
 }
 
 
 @end
 
-@implementation CountryItems
+@implementation CountryItems_bak
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{

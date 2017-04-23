@@ -9,7 +9,9 @@
 #import "GymsApi.h"
 
 static NSString * const GYM_SEARCH_ALL = @"https://iplay.sa.gov.tw/api/GymSearchAllList?$format=application/json";
+static NSString * const GYM_SEARCH_NPAGE = @"https://iplay.sa.gov.tw/api/GymSearchAllList?$format=application/json;odata.metadata=none&City=%@&Country=%@";
 static NSString * const GymList = @"GymList";
+static NSString * const GymListCityCountry = @"GymList_%@_%@";
 
 @implementation GymsApi
 
@@ -31,11 +33,22 @@ static NSString * const GymList = @"GymList";
 //        }
 //    }];
 //}
++ (void)downloadGymWithCity:(NSString *)city country:(NSString *)country completionHandler:(CompletionHandler)completionHandler {
 
-+ (void)downloadGymAllList:(CompletionHandler)completionHandler {
-    [self downloadFileWithFileName:GymList URLstring:GYM_SEARCH_ALL completionHandler:^(NSError *error) {
+    NSString *cityName = [city stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
+    
+    NSString *countryName = [country stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
+    
+    [self downloadFileWithFileName:[NSString stringWithFormat:GymListCityCountry, city, country] URLstring:[NSString stringWithFormat:GYM_SEARCH_NPAGE, cityName, countryName] isPost:NO completionHandler:^(NSError *error) {
+        
         completionHandler (error);
     }];
+}
+
++ (void)downloadGymAllList:(CompletionHandler)completionHandler {
+//    [self downloadFileWithFileName:GymList URLstring:GYM_SEARCH_ALL completionHandler:^(NSError *error) {
+//        completionHandler (error);
+//    }];
 }
 
 

@@ -6,73 +6,159 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--請選擇搜尋項目-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SearchGymsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gOw-22-eG3">
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOw-22-eG3">
                                 <rect key="frame" x="0.0" y="451" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="abd-BS-aNq"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="U6j-24-6Et"/>
                                 </connections>
                             </pickerView>
-                            <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UXA-vj-Wr2">
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXA-vj-Wr2">
                                 <rect key="frame" x="0.0" y="451" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="UTL-pu-A4G"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="D0B-mC-Hha"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y07-Y7-iUx">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y07-Y7-iUx">
                                 <rect key="frame" x="137" y="204" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="請選擇區域"/>
                                 <state key="disabled" title="請先選擇城市"/>
                                 <connections>
                                     <action selector="showPickerView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mXY-Yl-6R4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABK-QR-0TB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABK-QR-0TB">
                                 <rect key="frame" x="137" y="125" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="vXC-CJ-a12"/>
+                                </constraints>
                                 <state key="normal" title="請選擇城市"/>
                                 <connections>
                                     <action selector="showPickerView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y11-kc-4Ur"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xe3-qu-StG">
+                                <rect key="frame" x="172" y="320" width="31" height="30"/>
+                                <state key="normal" title="搜尋"/>
+                                <connections>
+                                    <action selector="search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="je7-bg-N2T"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ABK-QR-0TB" firstAttribute="leading" secondItem="Y07-Y7-iUx" secondAttribute="leading" id="1HE-KZ-Bdx"/>
+                            <constraint firstItem="UXA-vj-Wr2" firstAttribute="trailing" secondItem="gOw-22-eG3" secondAttribute="trailing" id="5mB-CY-1V5"/>
+                            <constraint firstItem="Y07-Y7-iUx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Qw-0p-mlf"/>
+                            <constraint firstItem="Y07-Y7-iUx" firstAttribute="top" secondItem="ABK-QR-0TB" secondAttribute="bottom" constant="49" id="8PJ-GM-q7h"/>
+                            <constraint firstItem="ABK-QR-0TB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="61" id="9fb-eh-IL7"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="gOw-22-eG3" secondAttribute="bottom" constant="-44" id="EID-YE-tml"/>
+                            <constraint firstItem="xe3-qu-StG" firstAttribute="top" secondItem="Y07-Y7-iUx" secondAttribute="bottom" constant="86" id="Mch-zJ-ygB"/>
+                            <constraint firstItem="ABK-QR-0TB" firstAttribute="trailing" secondItem="Y07-Y7-iUx" secondAttribute="trailing" id="Omx-6T-FMA"/>
+                            <constraint firstItem="UXA-vj-Wr2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fme-y1-miX"/>
+                            <constraint firstItem="UXA-vj-Wr2" firstAttribute="centerX" secondItem="Y07-Y7-iUx" secondAttribute="centerX" id="fnb-6c-i93"/>
+                            <constraint firstItem="UXA-vj-Wr2" firstAttribute="leading" secondItem="gOw-22-eG3" secondAttribute="leading" id="n9G-Sa-PBQ"/>
+                            <constraint firstItem="xe3-qu-StG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="thy-o5-UKs"/>
+                            <constraint firstItem="ABK-QR-0TB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w96-Ww-d8P"/>
+                            <constraint firstItem="gOw-22-eG3" firstAttribute="top" secondItem="UXA-vj-Wr2" secondAttribute="top" id="zSF-MI-fGC"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="First" id="Aky-y8-6b0"/>
+                    <navigationItem key="navigationItem" title="請選擇搜尋項目" id="Aky-y8-6b0"/>
                     <connections>
                         <outlet property="cityButton" destination="ABK-QR-0TB" id="LyT-pV-OOs"/>
                         <outlet property="cityPicker" destination="UXA-vj-Wr2" id="a05-H4-ef5"/>
                         <outlet property="countryButton" destination="Y07-Y7-iUx" id="X14-NQ-fp0"/>
                         <outlet property="countryPicker" destination="gOw-22-eG3" id="710-L8-R1B"/>
+                        <outlet property="searchButton" destination="8bC-Xf-vdC" id="IhR-YE-SUJ"/>
+                        <segue destination="z0M-8D-64O" kind="show" identifier="toGymResult" id="KIN-Rc-obM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-430" y="-672"/>
+            <point key="canvasLocation" x="-431.19999999999999" y="-672.41379310344837"/>
+        </scene>
+        <!--Gym Search Result Collection View Controller-->
+        <scene sceneID="5x1-17-fbl">
+            <objects>
+                <collectionViewController id="z0M-8D-64O" customClass="GymSearchResultCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="YnS-bo-mYb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="S0F-SY-Sp8">
+                            <size key="itemSize" width="150" height="150"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <label key="backgroundView" hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查無資料" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DZN-Gg-xHk">
+                            <rect key="frame" x="0.0" y="-64" width="375" height="623"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GymCell" id="QqV-Ey-l38" customClass="GymSearchCollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NZ8-Wo-MsJ">
+                                            <rect key="frame" x="0.0" y="96" width="150" height="54"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3iU-zz-Li8">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="95"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <connections>
+                                    <outlet property="gymImage" destination="3iU-zz-Li8" id="HW3-Ou-0mA"/>
+                                    <outlet property="gymTitle" destination="NZ8-Wo-MsJ" id="Xfm-Ov-cUP"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="z0M-8D-64O" id="yjW-4h-7si"/>
+                            <outlet property="delegate" destination="z0M-8D-64O" id="qDK-V1-aAq"/>
+                        </connections>
+                    </collectionView>
+                    <connections>
+                        <outlet property="noDataLabel" destination="DZN-Gg-xHk" id="0Nc-M6-HPk"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="84O-Xw-geO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="-670.61469265367316"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W1H-VI-K5M">
             <objects>
-                <navigationController id="I27-ZV-lW7" sceneMemberID="viewController">
+                <navigationController toolbarHidden="NO" id="I27-ZV-lW7" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8ex-b5-IzH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

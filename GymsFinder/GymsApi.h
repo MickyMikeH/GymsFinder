@@ -13,6 +13,8 @@
 
 //+ (void)startDownLoad:(CompletionHandler)completionHandler;
 
++ (void)downloadGymWithCity:(NSString *)city country:(NSString *)country completionHandler:(CompletionHandler)completionHandler;
+
 /**
  取得體育館所有資料
  */

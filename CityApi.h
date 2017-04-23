@@ -16,4 +16,12 @@
  */
 + (void)downloadAllCityAndCountry:(CompletionHandler)completionHandler;;
 
+/**
+ 取得鄉鎮資料
+
+ @param cityName 城市名
+ @param completionHandler CompletionHandler
+ */
++ (void)downloadCountryListWithCityName:(NSString *)cityName completionHandler:(CompletionHandler)completionHandler;
+
 @end

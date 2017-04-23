@@ -33,4 +33,12 @@
  @return JSON Array
  */
 + (NSArray *)parseJSONArrayWithFileName:(NSString *)fileName;
+
+/**
+ 從mainBundle取JSON
+
+ @param fileName 檔名和副檔名
+ @return JSON Dict
+ */
++ (NSDictionary *)dictionaryWithContenOfJSONString:(NSString *)fileName;
 @end

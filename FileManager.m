@@ -27,4 +27,11 @@
     NSString *documentsDirectory = [paths firstObject];
     return [documentsDirectory stringByAppendingPathComponent:fileName];
 }
+
++ (NSDictionary *)dictionaryWithContenOfJSONString:(NSString *)fileName {
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:[fileName stringByDeletingPathExtension] ofType:[fileName pathExtension]];
+    
+    return [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:filePath] options: NSJSONReadingMutableContainers error:nil];
+}
+
 @end

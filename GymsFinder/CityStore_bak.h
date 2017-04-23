@@ -9,14 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <Mantle/Mantle.h>
 
-@interface GymStore : MTLModel
+@interface CityStore_bak : MTLModel
 
 + (instancetype)sharedInstance;
 
 @property (nonatomic, copy) NSArray *items;
 @end
 
-@interface CityItems : MTLModel <MTLJSONSerializing>
+@interface CityItems_bak : MTLModel <MTLJSONSerializing>
 
 /**
  縣市 ID
@@ -36,7 +36,7 @@
 
 @end
 
-@interface CountryItems : MTLModel <MTLJSONSerializing>
+@interface CountryItems_bak : MTLModel <MTLJSONSerializing>
 
 /**
  鄉鎮 ID

@@ -14,6 +14,6 @@ typedef void(^CompletionHandler)(NSError *error);
 
 @interface BaseApi : NSObject
 
-+ (void)downloadFileWithFileName:(NSString *)fileName URLstring:(NSString *)URLstring completionHandler:(CompletionHandler)completionHandler;
++ (void)downloadFileWithFileName:(NSString *)fileName URLstring:(NSString *)URLstring isPost:(BOOL)isPost completionHandler:(CompletionHandler)completionHandler;
 
 @end
