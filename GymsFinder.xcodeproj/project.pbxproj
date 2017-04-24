@@ -10,25 +10,25 @@
 		A205496A4DFD22B114CC99CA /* libPods-GymsFinderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12031BE62116B50FD6103893 /* libPods-GymsFinderTests.a */; };
 		BF31B069C9135594F068857C /* libPods-GymsFinderUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C06A7D8792061F4F74850EE /* libPods-GymsFinderUITests.a */; };
 		DC0E28ED10F5EFF34C250F53 /* libPods-GymsFinder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9345E8888DE1A1900562A09A /* libPods-GymsFinder.a */; };
-		F408E4521EAB46C50055EB34 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F408E4511EAB46C50055EB34 /* FileManager.m */; };
-		F408E4541EAB47700055EB34 /* CityStore_bak.m in Sources */ = {isa = PBXBuildFile; fileRef = F408E4531EAB47700055EB34 /* CityStore_bak.m */; };
-		F428DBC51EACE05200123F7D /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = F428DBC41EACE05200123F7D /* city.json */; };
 		F43F571F1EA1D15200DF2B27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F43F571E1EA1D15200DF2B27 /* main.m */; };
 		F43F57221EA1D15200DF2B27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F43F57211EA1D15200DF2B27 /* AppDelegate.m */; };
-		F43F57251EA1D15200DF2B27 /* SearchGymsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43F57241EA1D15200DF2B27 /* SearchGymsViewController.m */; };
 		F43F57281EA1D15200DF2B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43F57261EA1D15200DF2B27 /* Main.storyboard */; };
 		F43F572A1EA1D15200DF2B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43F57291EA1D15200DF2B27 /* Assets.xcassets */; };
 		F43F572D1EA1D15200DF2B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43F572B1EA1D15200DF2B27 /* LaunchScreen.storyboard */; };
 		F43F57381EA1D15200DF2B27 /* GymsFinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F43F57371EA1D15200DF2B27 /* GymsFinderTests.m */; };
 		F43F57431EA1D15200DF2B27 /* GymsFinderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F43F57421EA1D15200DF2B27 /* GymsFinderUITests.m */; };
-		F495F51B1EAB9EDE0047C2CA /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F495F51A1EAB9EDE0047C2CA /* DownloadViewController.m */; };
-		F495F51E1EAB9F340047C2CA /* CityApi.m in Sources */ = {isa = PBXBuildFile; fileRef = F495F51D1EAB9F340047C2CA /* CityApi.m */; };
-		F495F5211EAB9F600047C2CA /* BaseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = F495F5201EAB9F600047C2CA /* BaseApi.m */; };
-		F495F5251EAC57560047C2CA /* GymSearchResultCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F495F5241EAC57560047C2CA /* GymSearchResultCollectionViewController.m */; };
-		F495F5281EAC57970047C2CA /* GymSearchCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F495F5271EAC57970047C2CA /* GymSearchCollectionViewCell.m */; };
-		F495F52B1EAC58670047C2CA /* GymStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F495F52A1EAC58670047C2CA /* GymStore.m */; };
-		F495F5311EACACA00047C2CA /* CityStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F495F5301EACACA00047C2CA /* CityStore.m */; };
-		F4DD237F1EA1E36400FE8F21 /* GymsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DD237E1EA1E36400FE8F21 /* GymsApi.m */; };
+		F4840C391EAE4DFF00609027 /* BaseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = F4840C341EAE4DFF00609027 /* BaseApi.m */; };
+		F4840C3A1EAE4DFF00609027 /* CityApi.m in Sources */ = {isa = PBXBuildFile; fileRef = F4840C361EAE4DFF00609027 /* CityApi.m */; };
+		F4840C3B1EAE4DFF00609027 /* GymsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = F4840C381EAE4DFF00609027 /* GymsApi.m */; };
+		F4840C451EAE4EC000609027 /* CityStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F4840C401EAE4EC000609027 /* CityStore.m */; };
+		F4840C461EAE4EC000609027 /* CityStore_bak.m in Sources */ = {isa = PBXBuildFile; fileRef = F4840C421EAE4EC000609027 /* CityStore_bak.m */; };
+		F4840C471EAE4EC100609027 /* GymStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F4840C441EAE4EC000609027 /* GymStore.m */; };
+		F4840C561EAE4ECC00609027 /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = F4840C491EAE4ECC00609027 /* city.json */; };
+		F4840C571EAE4ECC00609027 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4840C4C1EAE4ECC00609027 /* FileManager.m */; };
+		F4840C581EAE4ECC00609027 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4840C4F1EAE4ECC00609027 /* DownloadViewController.m */; };
+		F4840C591EAE4ECC00609027 /* GymSearchCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4840C511EAE4ECC00609027 /* GymSearchCollectionViewCell.m */; };
+		F4840C5A1EAE4ECC00609027 /* GymSearchResultCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4840C531EAE4ECC00609027 /* GymSearchResultCollectionViewController.m */; };
+		F4840C5B1EAE4ECC00609027 /* SearchGymsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4840C551EAE4ECC00609027 /* SearchGymsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,16 +57,9 @@
 		9345E8888DE1A1900562A09A /* libPods-GymsFinder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GymsFinder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94015EFF5EF5960D4B305DD0 /* Pods-GymsFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymsFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymsFinder/Pods-GymsFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		9BB36A210117E8C3D2B8EB16 /* Pods-GymsFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymsFinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymsFinderTests/Pods-GymsFinderTests.release.xcconfig"; sourceTree = "<group>"; };
-		F408E4501EAB46C50055EB34 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
-		F408E4511EAB46C50055EB34 /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
-		F408E4531EAB47700055EB34 /* CityStore_bak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityStore_bak.m; path = GymsFinder/CityStore_bak.m; sourceTree = "<group>"; };
-		F428DBC41EACE05200123F7D /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = city.json; path = Resouce/city.json; sourceTree = "<group>"; };
 		F43F571A1EA1D15200DF2B27 /* GymsFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymsFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43F571E1EA1D15200DF2B27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F43F57201EA1D15200DF2B27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F43F57211EA1D15200DF2B27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F43F57231EA1D15200DF2B27 /* SearchGymsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SearchGymsViewController.h; path = GymsFinder/SearchGymsViewController.h; sourceTree = "<group>"; };
-		F43F57241EA1D15200DF2B27 /* SearchGymsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SearchGymsViewController.m; path = GymsFinder/SearchGymsViewController.m; sourceTree = "<group>"; };
 		F43F57271EA1D15200DF2B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F43F57291EA1D15200DF2B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F43F572C1EA1D15200DF2B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,23 +70,30 @@
 		F43F573E1EA1D15200DF2B27 /* GymsFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymsFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43F57421EA1D15200DF2B27 /* GymsFinderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GymsFinderUITests.m; sourceTree = "<group>"; };
 		F43F57441EA1D15200DF2B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F495F5191EAB9EDE0047C2CA /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadViewController.h; path = GymsFinder/DownloadViewController.h; sourceTree = "<group>"; };
-		F495F51A1EAB9EDE0047C2CA /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownloadViewController.m; path = GymsFinder/DownloadViewController.m; sourceTree = "<group>"; };
-		F495F51C1EAB9F340047C2CA /* CityApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityApi.h; sourceTree = "<group>"; };
-		F495F51D1EAB9F340047C2CA /* CityApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityApi.m; sourceTree = "<group>"; };
-		F495F51F1EAB9F600047C2CA /* BaseApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseApi.h; sourceTree = "<group>"; };
-		F495F5201EAB9F600047C2CA /* BaseApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseApi.m; sourceTree = "<group>"; };
-		F495F5231EAC57560047C2CA /* GymSearchResultCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GymSearchResultCollectionViewController.h; sourceTree = "<group>"; };
-		F495F5241EAC57560047C2CA /* GymSearchResultCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GymSearchResultCollectionViewController.m; sourceTree = "<group>"; };
-		F495F5261EAC57970047C2CA /* GymSearchCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GymSearchCollectionViewCell.h; sourceTree = "<group>"; };
-		F495F5271EAC57970047C2CA /* GymSearchCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GymSearchCollectionViewCell.m; sourceTree = "<group>"; };
-		F495F5291EAC58670047C2CA /* GymStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GymStore.h; sourceTree = "<group>"; };
-		F495F52A1EAC58670047C2CA /* GymStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GymStore.m; sourceTree = "<group>"; };
-		F495F52F1EACACA00047C2CA /* CityStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityStore.h; sourceTree = "<group>"; };
-		F495F5301EACACA00047C2CA /* CityStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityStore.m; sourceTree = "<group>"; };
-		F4DD237D1EA1E36400FE8F21 /* GymsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GymsApi.h; path = GymsFinder/GymsApi.h; sourceTree = "<group>"; };
-		F4DD237E1EA1E36400FE8F21 /* GymsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GymsApi.m; path = GymsFinder/GymsApi.m; sourceTree = "<group>"; };
-		F4DD23801EA4FFB600FE8F21 /* CityStore_bak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityStore_bak.h; path = GymsFinder/CityStore_bak.h; sourceTree = "<group>"; };
+		F4840C331EAE4DFF00609027 /* BaseApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseApi.h; sourceTree = "<group>"; };
+		F4840C341EAE4DFF00609027 /* BaseApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseApi.m; sourceTree = "<group>"; };
+		F4840C351EAE4DFF00609027 /* CityApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityApi.h; sourceTree = "<group>"; };
+		F4840C361EAE4DFF00609027 /* CityApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityApi.m; sourceTree = "<group>"; };
+		F4840C371EAE4DFF00609027 /* GymsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GymsApi.h; sourceTree = "<group>"; };
+		F4840C381EAE4DFF00609027 /* GymsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GymsApi.m; sourceTree = "<group>"; };
+		F4840C3D1EAE4E4100609027 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F4840C3F1EAE4EC000609027 /* CityStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityStore.h; sourceTree = "<group>"; };
+		F4840C401EAE4EC000609027 /* CityStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityStore.m; sourceTree = "<group>"; };
+		F4840C411EAE4EC000609027 /* CityStore_bak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityStore_bak.h; sourceTree = "<group>"; };
+		F4840C421EAE4EC000609027 /* CityStore_bak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityStore_bak.m; sourceTree = "<group>"; };
+		F4840C431EAE4EC000609027 /* GymStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GymStore.h; sourceTree = "<group>"; };
+		F4840C441EAE4EC000609027 /* GymStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GymStore.m; sourceTree = "<group>"; };
+		F4840C491EAE4ECC00609027 /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
+		F4840C4B1EAE4ECC00609027 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		F4840C4C1EAE4ECC00609027 /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+		F4840C4E1EAE4ECC00609027 /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		F4840C4F1EAE4ECC00609027 /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		F4840C501EAE4ECC00609027 /* GymSearchCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GymSearchCollectionViewCell.h; sourceTree = "<group>"; };
+		F4840C511EAE4ECC00609027 /* GymSearchCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GymSearchCollectionViewCell.m; sourceTree = "<group>"; };
+		F4840C521EAE4ECC00609027 /* GymSearchResultCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GymSearchResultCollectionViewController.h; sourceTree = "<group>"; };
+		F4840C531EAE4ECC00609027 /* GymSearchResultCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GymSearchResultCollectionViewController.m; sourceTree = "<group>"; };
+		F4840C541EAE4ECC00609027 /* SearchGymsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchGymsViewController.h; sourceTree = "<group>"; };
+		F4840C551EAE4ECC00609027 /* SearchGymsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchGymsViewController.m; sourceTree = "<group>"; };
 		F57D50D9E34AE72C57161FA3 /* Pods-GymsFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymsFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymsFinder/Pods-GymsFinder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,27 +148,9 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F408E44F1EAB45F80055EB34 /* Api */ = {
-			isa = PBXGroup;
-			children = (
-				F4DD237D1EA1E36400FE8F21 /* GymsApi.h */,
-				F4DD237E1EA1E36400FE8F21 /* GymsApi.m */,
-				F495F51C1EAB9F340047C2CA /* CityApi.h */,
-				F495F51D1EAB9F340047C2CA /* CityApi.m */,
-				F495F51F1EAB9F600047C2CA /* BaseApi.h */,
-				F495F5201EAB9F600047C2CA /* BaseApi.m */,
-			);
-			name = Api;
-			sourceTree = "<group>";
-		};
 		F43F57111EA1D15200DF2B27 = {
 			isa = PBXGroup;
 			children = (
-				F495F52C1EACAA550047C2CA /* Resource */,
-				F495F5221EAC48D30047C2CA /* ViewController */,
-				F495F5181EAB9B050047C2CA /* Model */,
-				F495F5171EAB9AF50047C2CA /* Utiltiy */,
-				F408E44F1EAB45F80055EB34 /* Api */,
 				F43F571C1EA1D15200DF2B27 /* GymsFinder */,
 				F43F57361EA1D15200DF2B27 /* GymsFinderTests */,
 				F43F57411EA1D15200DF2B27 /* GymsFinderUITests */,
@@ -191,8 +173,13 @@
 		F43F571C1EA1D15200DF2B27 /* GymsFinder */ = {
 			isa = PBXGroup;
 			children = (
-				F43F57201EA1D15200DF2B27 /* AppDelegate.h */,
+				F4840C321EAE4DFF00609027 /* Api */,
+				F4840C3E1EAE4EC000609027 /* Model */,
+				F4840C481EAE4ECC00609027 /* Resouce */,
+				F4840C4A1EAE4ECC00609027 /* Utility */,
+				F4840C4D1EAE4ECC00609027 /* ViewController */,
 				F43F57211EA1D15200DF2B27 /* AppDelegate.m */,
+				F4840C3D1EAE4E4100609027 /* AppDelegate.h */,
 				F43F57261EA1D15200DF2B27 /* Main.storyboard */,
 				F43F57291EA1D15200DF2B27 /* Assets.xcassets */,
 				F43F572B1EA1D15200DF2B27 /* LaunchScreen.storyboard */,
@@ -228,49 +215,65 @@
 			path = GymsFinderUITests;
 			sourceTree = "<group>";
 		};
-		F495F5171EAB9AF50047C2CA /* Utiltiy */ = {
+		F4840C321EAE4DFF00609027 /* Api */ = {
 			isa = PBXGroup;
 			children = (
-				F408E4501EAB46C50055EB34 /* FileManager.h */,
-				F408E4511EAB46C50055EB34 /* FileManager.m */,
+				F4840C331EAE4DFF00609027 /* BaseApi.h */,
+				F4840C341EAE4DFF00609027 /* BaseApi.m */,
+				F4840C351EAE4DFF00609027 /* CityApi.h */,
+				F4840C361EAE4DFF00609027 /* CityApi.m */,
+				F4840C371EAE4DFF00609027 /* GymsApi.h */,
+				F4840C381EAE4DFF00609027 /* GymsApi.m */,
 			);
-			name = Utiltiy;
+			path = Api;
 			sourceTree = "<group>";
 		};
-		F495F5181EAB9B050047C2CA /* Model */ = {
+		F4840C3E1EAE4EC000609027 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F4DD23801EA4FFB600FE8F21 /* CityStore_bak.h */,
-				F408E4531EAB47700055EB34 /* CityStore_bak.m */,
-				F495F5291EAC58670047C2CA /* GymStore.h */,
-				F495F52A1EAC58670047C2CA /* GymStore.m */,
-				F495F52F1EACACA00047C2CA /* CityStore.h */,
-				F495F5301EACACA00047C2CA /* CityStore.m */,
+				F4840C3F1EAE4EC000609027 /* CityStore.h */,
+				F4840C401EAE4EC000609027 /* CityStore.m */,
+				F4840C411EAE4EC000609027 /* CityStore_bak.h */,
+				F4840C421EAE4EC000609027 /* CityStore_bak.m */,
+				F4840C431EAE4EC000609027 /* GymStore.h */,
+				F4840C441EAE4EC000609027 /* GymStore.m */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		F495F5221EAC48D30047C2CA /* ViewController */ = {
+		F4840C481EAE4ECC00609027 /* Resouce */ = {
 			isa = PBXGroup;
 			children = (
-				F43F57231EA1D15200DF2B27 /* SearchGymsViewController.h */,
-				F43F57241EA1D15200DF2B27 /* SearchGymsViewController.m */,
-				F495F5191EAB9EDE0047C2CA /* DownloadViewController.h */,
-				F495F51A1EAB9EDE0047C2CA /* DownloadViewController.m */,
-				F495F5231EAC57560047C2CA /* GymSearchResultCollectionViewController.h */,
-				F495F5241EAC57560047C2CA /* GymSearchResultCollectionViewController.m */,
-				F495F5261EAC57970047C2CA /* GymSearchCollectionViewCell.h */,
-				F495F5271EAC57970047C2CA /* GymSearchCollectionViewCell.m */,
+				F4840C491EAE4ECC00609027 /* city.json */,
+			);
+			name = Resouce;
+			path = Model/Resouce;
+			sourceTree = "<group>";
+		};
+		F4840C4A1EAE4ECC00609027 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F4840C4B1EAE4ECC00609027 /* FileManager.h */,
+				F4840C4C1EAE4ECC00609027 /* FileManager.m */,
+			);
+			name = Utility;
+			path = Model/Utility;
+			sourceTree = "<group>";
+		};
+		F4840C4D1EAE4ECC00609027 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4840C4E1EAE4ECC00609027 /* DownloadViewController.h */,
+				F4840C4F1EAE4ECC00609027 /* DownloadViewController.m */,
+				F4840C501EAE4ECC00609027 /* GymSearchCollectionViewCell.h */,
+				F4840C511EAE4ECC00609027 /* GymSearchCollectionViewCell.m */,
+				F4840C521EAE4ECC00609027 /* GymSearchResultCollectionViewController.h */,
+				F4840C531EAE4ECC00609027 /* GymSearchResultCollectionViewController.m */,
+				F4840C541EAE4ECC00609027 /* SearchGymsViewController.h */,
+				F4840C551EAE4ECC00609027 /* SearchGymsViewController.m */,
 			);
 			name = ViewController;
-			sourceTree = "<group>";
-		};
-		F495F52C1EACAA550047C2CA /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				F428DBC41EACE05200123F7D /* city.json */,
-			);
-			name = Resource;
+			path = Model/ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,7 +394,7 @@
 			files = (
 				F43F572D1EA1D15200DF2B27 /* LaunchScreen.storyboard in Resources */,
 				F43F572A1EA1D15200DF2B27 /* Assets.xcassets in Resources */,
-				F428DBC51EACE05200123F7D /* city.json in Resources */,
+				F4840C561EAE4ECC00609027 /* city.json in Resources */,
 				F43F57281EA1D15200DF2B27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,19 +558,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F43F57251EA1D15200DF2B27 /* SearchGymsViewController.m in Sources */,
-				F495F51B1EAB9EDE0047C2CA /* DownloadViewController.m in Sources */,
 				F43F57221EA1D15200DF2B27 /* AppDelegate.m in Sources */,
-				F495F5251EAC57560047C2CA /* GymSearchResultCollectionViewController.m in Sources */,
-				F408E4541EAB47700055EB34 /* CityStore_bak.m in Sources */,
-				F495F5311EACACA00047C2CA /* CityStore.m in Sources */,
+				F4840C5A1EAE4ECC00609027 /* GymSearchResultCollectionViewController.m in Sources */,
+				F4840C391EAE4DFF00609027 /* BaseApi.m in Sources */,
 				F43F571F1EA1D15200DF2B27 /* main.m in Sources */,
-				F408E4521EAB46C50055EB34 /* FileManager.m in Sources */,
-				F495F52B1EAC58670047C2CA /* GymStore.m in Sources */,
-				F495F5281EAC57970047C2CA /* GymSearchCollectionViewCell.m in Sources */,
-				F4DD237F1EA1E36400FE8F21 /* GymsApi.m in Sources */,
-				F495F5211EAB9F600047C2CA /* BaseApi.m in Sources */,
-				F495F51E1EAB9F340047C2CA /* CityApi.m in Sources */,
+				F4840C3B1EAE4DFF00609027 /* GymsApi.m in Sources */,
+				F4840C581EAE4ECC00609027 /* DownloadViewController.m in Sources */,
+				F4840C451EAE4EC000609027 /* CityStore.m in Sources */,
+				F4840C5B1EAE4ECC00609027 /* SearchGymsViewController.m in Sources */,
+				F4840C461EAE4EC000609027 /* CityStore_bak.m in Sources */,
+				F4840C591EAE4ECC00609027 /* GymSearchCollectionViewCell.m in Sources */,
+				F4840C3A1EAE4DFF00609027 /* CityApi.m in Sources */,
+				F4840C471EAE4EC100609027 /* GymStore.m in Sources */,
+				F4840C571EAE4ECC00609027 /* FileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
