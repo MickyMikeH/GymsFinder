@@ -1,0 +1,16 @@
+{
+  "value" : [
+    {"GymKind" : "綜合性場館"},
+    {"GymKind" : "球類運動"},
+    {"GymKind" : "水上活動"},
+    {"GymKind" : "戶外運動"},
+    {"GymKind" : "技擊類"},
+    {"GymKind" : "伸展運動"},
+    {"GymKind" : "競速運動"},
+    {"GymKind" : "射擊運動"},
+    {"GymKind" : "冰上運動"},
+    {"GymKind" : "健身房運動"},
+    {"GymKind" : "身心障礙/銀髮族運動"},
+    {"GymKind" : "其他"}
+  ]
+}

@@ -11,5 +11,6 @@
 @interface GymSearchCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *gymTitle;
 @property (weak, nonatomic) IBOutlet UIImageView *gymImage;
-
+@property (weak, nonatomic) IBOutlet UILabel *gymTel;
+@property (weak, nonatomic) IBOutlet UILabel *gymAddress;
 @end

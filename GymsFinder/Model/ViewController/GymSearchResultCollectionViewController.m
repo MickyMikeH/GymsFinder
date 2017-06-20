@@ -9,6 +9,7 @@
 #import "GymSearchResultCollectionViewController.h"
 #import "GymSearchCollectionViewCell.h"
 #import "GymStore.h"
+#import "GymsApi.h"
 
 @interface GymSearchResultCollectionViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *noDataLabel;
@@ -65,7 +66,8 @@ static NSString * const reuseIdentifier = @"GymCell";
     GymItems *gymItems = self.gymItems[indexPath.item];
 
     cell.gymTitle.text = gymItems.name;
-    
+    cell.gymTel.text = gymItems.tel;
+    cell.gymAddress.text = gymItems.address;
     NSURL *gymPhotoURL = [NSURL URLWithString:[gymItems.photo1 stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]]];
     
     cell.gymImage.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:gymPhotoURL]];
@@ -74,6 +76,16 @@ static NSString * const reuseIdentifier = @"GymCell";
 }
 
 #pragma mark <UICollectionViewDelegate>
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    GymItems *gymItems = self.gymItems[indexPath.item];
+    [GymsApi downloadGymWithGymID:gymItems.gymID.stringValue completionHandler:^(NSError *error) {
+        [[GymStore sharedInstance] parseJSONArrayWithGymID:gymItems.gymID.stringValue];
+        
+        NSLog(@"%@", self.gymStore.gymDetailRateItems);
+    }];
+}
+
 
 /*
 // Uncomment this method to specify if the specified item should be highlighted during tracking

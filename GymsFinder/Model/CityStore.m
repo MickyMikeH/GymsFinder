@@ -33,6 +33,10 @@
     self.countryItems = [NSArray arrayWithArray:[MTLJSONAdapter modelsOfClass:[CountryItems class] fromJSONArray:array error:nil]];
 }
 
+- (void)clearCountryItems {
+    self.countryItems = nil;
+}
+
 @end
 
 @implementation CityItems

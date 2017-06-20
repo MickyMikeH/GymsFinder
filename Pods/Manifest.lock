@@ -17,15 +17,18 @@ PODS:
   - Mantle (2.1.0):
     - Mantle/extobjc (= 2.1.0)
   - Mantle/extobjc (2.1.0)
+  - STPickerView (2.0)
 
 DEPENDENCIES:
   - AFNetworking
   - Mantle
+  - STPickerView
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  STPickerView: 7b5f79ab9c48a3aad85b413c622c415961cec251
 
-PODFILE CHECKSUM: 1e99bbebc93ac98422b3749f65e025447870386c
+PODFILE CHECKSUM: 43b4673a9d2b77d38f8e358c6e61780933f8a136
 
 COCOAPODS: 1.2.1

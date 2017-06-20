@@ -17,7 +17,24 @@
 
 /**
  取得體育館所有資料
- */
-+ (void)downloadGymAllList:(CompletionHandler)completionHandler;
 
+ @param completionHandler 完成
+ */
+//+ (void)downloadGymAllList:(CompletionHandler)completionHandler;
+
+/**
+ 取得設施項目
+
+ @param gymKind 設施類型
+ @param completionHandler 完成
+ */
++ (void)downloadGymTypeListWithGymKind:(NSString *)gymKind completionHandler:(CompletionHandler)completionHandler;
+
+/**
+ 取得體育館詳細資料
+
+ @param gymID 體育館ID
+ @param completionHandler 完成
+ */
++ (void)downloadGymWithGymID:(NSString *)gymID completionHandler:(CompletionHandler)completionHandler;
 @end

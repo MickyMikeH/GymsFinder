@@ -18,6 +18,7 @@
 
 - (void)parseCountryJSONArray:(NSArray *)array;
 
+- (void)clearCountryItems;
 @end
 
 @interface CityItems : MTLModel<MTLJSONSerializing>
